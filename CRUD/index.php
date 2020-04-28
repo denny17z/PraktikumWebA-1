@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home Page</title>
+	<title>CRUD Page</title>
 </head>
 <link rel="stylesheet" type="text/css" href="custom.css">
 <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -24,6 +24,17 @@
 				<td><input class="masukan" type="text" name="nama" placeholder="Nama Lengkap"></input></td>
 			</tr>
 			<tr>
+				<td>Jenis Kelamin</td>
+				<td>:</td>
+				<td><input type="radio" value="Laki-laki" name="jk">Laki-laki</input></td>
+				<td><input type="radio" value="Perempuan" name="jk">Perempuan</input></td>
+			</tr>
+			<tr>
+				<td>Tanggal Lahir</td>
+				<td>:</td>
+				<td><input type="date" name="ttl" value="<?php echo date('Y-m-d'); ?>"></input></td>
+			</tr>
+			<tr>
 				<td>Alamat</td>
 				<td>:</td>
 				<td><textarea class="masukan" name="alamat" placeholder="Masukan Alamat"></textarea></td>
@@ -32,16 +43,6 @@
 				<td>Telepon</td>
 				<td>:</td>
 				<td><input class="masukan" type="text" name="telp" placeholder="No. Telp."></input></td>
-			</tr>
-			<tr>
-				<td>Status</td>
-				<td>:</td>
-				<td>
-					<select class="selek" name="status">
-						<option value="Aktif">Aktif</option>
-						<option value="Tidak Aktif">Tidak Aktif</option>
-					</select>
-				</td>
 			</tr>
 			<tr>
 				<td></td>
